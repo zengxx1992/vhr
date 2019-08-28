@@ -895,7 +895,7 @@ INSERT INTO `sysmsg` VALUES ('81', '18', '0', '12', '0');
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `addDep`;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `addDep`(in depName varchar(32),in parentId int,in enabled boolean,out result int,out result2 int)
+CREATE DEFINER=`vhr`@`192.168.100.222` PROCEDURE `addDep`(in depName varchar(32),in parentId int,in enabled boolean,out result int,out result2 int)
 begin
   declare did int;
   declare pDepPath varchar(64);
